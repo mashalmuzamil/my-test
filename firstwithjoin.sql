@@ -1,0 +1,5 @@
+SELECT grommet_products.product_name, grommet_products.product_img_url,grommet_products.product_url, grommet_products.product_price_min, grommet_products.product_short_description ,grommet_products.grommet_category
+FROM grommet_products JOIN grommet_product_categories ON grommet_products.id = grommet_product_categories.product_id
+ JOIN 
+grommet_gifts_categories ON grommet_product_categories.product_category_id = grommet_gifts_categories.id WHERE grommet_gifts_categories.sub_category = 'Jewelry'
+
